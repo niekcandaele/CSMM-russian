@@ -1,3 +1,4 @@
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/niekcandaele/CSMM-issues.png?columns=all)](https://waffle.io/niekcandaele/CSMM-issues?utm_source=badge)
 # CSMM-issues
 Issues-only repo for CSMM
 
