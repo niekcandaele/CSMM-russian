@@ -9,6 +9,7 @@ Also, the docs are here.
 CSMM is closed source but the project is tracked publically.
 
 If you are here for
+
 - Feature requests
 - Bug reports
 - Interested in development process
