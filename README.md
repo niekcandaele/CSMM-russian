@@ -1,7 +1,7 @@
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/niekcandaele/CSMM-issues.png?columns=all)](https://waffle.io/niekcandaele/CSMM-issues?utm_source=badge)
 
-[![Docs](http://csmm.readthedocs.io/en/latest/?badge=latest)]
-(http://csmm.readthedocs.io/)
+[Docs](http://csmm.readthedocs.io/en/latest/?badge=latest)
+
 # CSMM issues and docs
 Issues-only repo for CSMM
 Also, the docs are here.
