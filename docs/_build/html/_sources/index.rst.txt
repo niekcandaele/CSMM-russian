@@ -1,8 +1,9 @@
 .. toctree::
    :maxdepth: 2
 
+   setting-up/quick-start
    features/discord
-   features/countryban
+   features/ingame
    ...
 
 CSMM
@@ -23,17 +24,17 @@ Features
 
 
 Contribute to the documentation
-----------
+-------------------------------
 
 Blabla
 
 Support
 -------
 
-If you are having issues, please let us know.
-We have a discord server - https://discordapp.com/invite/kuDJG6e
 
-- Issue Tracker: https://github.com/niekcandaele/CSMM-issues
+
+- `Issue tracker <https://github.com/niekcandaele/CSMM-issues>`_  
+- `Discord server <https://discordapp.com/invite/kuDJG6e>`_  
 
 License
 -------

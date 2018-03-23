@@ -17,3 +17,8 @@ Quickly see some basic info about the server
 
 - Toptime
 Which players have spent the most time on your server?
+
+Configuration
+-------------
+
+Go to the website and set it up!

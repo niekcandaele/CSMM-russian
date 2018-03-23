@@ -1,0 +1,6 @@
+Quick Start
+===========
+
+1. Install Allocs Fixes
+
+2. Go to website and add your server
