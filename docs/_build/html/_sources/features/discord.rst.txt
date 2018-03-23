@@ -22,3 +22,5 @@ Configuration
 -------------
 
 Go to the website and set it up!
+
+Chat channel & commands channel
