@@ -1,6 +1,10 @@
 Contributing to documentation
 =============================
 
+Here's a handy cheatsheet for the markup in this documentation
+
+https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst
+
 Github
 ------
 
