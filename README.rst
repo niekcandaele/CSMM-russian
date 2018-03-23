@@ -18,7 +18,7 @@ You're at the right place!
 
 For more info, please stop by the `Discord server <https://discordapp.com/invite/kuDJG6e>`_  
 
-.. |docs| image:: https://readthedocs.org/projects/docs/badge/?version=latest
+.. |docs| image:: http://csmm.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
     :scale: 100%
-    :target: https://docs.readthedocs.io/en/latest/?badge=latest
+    :target: http://csmm.readthedocs.io/en/latest/?badge=latest
