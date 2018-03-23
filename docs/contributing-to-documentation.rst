@@ -17,17 +17,23 @@ Install Sphinx::
 
     pip install sphinx sphinx-autobuild
 
+Create a new folder::
+
+    mkdir csmm-docs
+    cd csmm-docs
+
 Clone the documentation repository to your machine::
 
+    git init
     git pull https://github.com/niekcandaele/CSMM-issues
 
-Make your changes
+Write some docs!
 
 Build your new version::
 
      make html
 
-Open index.html from the _build folder.
+Open index.html from the _build folder to see the docs.
 
 Autmatically rebuild when a file changes::
 
