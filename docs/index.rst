@@ -24,10 +24,6 @@ Features
 - Ingame commands
 
 
-Contribute to the documentation
--------------------------------
-
-Blabla
 
 Support
 -------
