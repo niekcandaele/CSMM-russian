@@ -4,6 +4,7 @@
    setting-up/quick-start
    features/discord
    features/ingame
+   contributing-to-documentation
    ...
 
 CSMM
