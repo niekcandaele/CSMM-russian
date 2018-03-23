@@ -1,3 +1,10 @@
+.. toctree::
+   :maxdepth: 2
+
+   features/discord
+   features/countryban
+   ...
+
 CSMM
 ========
 
