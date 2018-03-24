@@ -19,7 +19,7 @@ Make sure python & pip are installed
 
 Install Sphinx::
 
-    pip install sphinx sphinx-autobuild
+    pip install sphinx sphinx-autobuild sphinx_rtd_theme
 
 Create a new folder::
 
