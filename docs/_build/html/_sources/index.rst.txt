@@ -6,6 +6,7 @@
    features/ingame
    contributing-to-documentation
    support
+   about
    ...
 
 CSMM
