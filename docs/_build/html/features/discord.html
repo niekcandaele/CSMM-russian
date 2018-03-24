@@ -36,7 +36,7 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="CSMM  documentation" href="../index.html"/>
-        <link rel="next" title="In-game features and functions" href="ingame.html"/>
+        <link rel="next" title="In-game features" href="ingame.html"/>
         <link rel="prev" title="Quick Start" href="../setting-up/quick-start.html"/> 
 
   
@@ -89,12 +89,16 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../setting-up/quick-start.html">Quick Start</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Discord</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#chat-bridge">Chat bridge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#status">Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#toptime">Toptime</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="ingame.html">In-game features and functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingame.html">In-game features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing-to-documentation.html">Contributing to documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../support.html">Support</a></li>
 </ul>
@@ -163,28 +167,33 @@
   <div class="section" id="discord">
 <h1>Discord<a class="headerlink" href="#discord" title="Permalink to this headline">¶</a></h1>
 <p>CSMM has powerful Discord intergration via bot.</p>
-<div class="section" id="features">
-<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Chat bridge</li>
-</ul>
-<p>Chat from discord directly to the game</p>
+<div class="section" id="chat-bridge">
+<h2>Chat bridge<a class="headerlink" href="#chat-bridge" title="Permalink to this headline">¶</a></h2>
+<p>Chat from discord directly to the game.</p>
+<p>CSMM will automatically grab new messages from the game and send them to your specified discord channel. (and from discord to game aswell)</p>
+<img alt="../_images/discord-chatbridge.png" src="../_images/discord-chatbridge.png" />
 </div>
 <div class="section" id="commands">
 <h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Status</li>
-</ul>
+<div class="section" id="status">
+<h3>Status<a class="headerlink" href="#status" title="Permalink to this headline">¶</a></h3>
+<p>Aliases: d7, day7</p>
 <p>Quickly see some basic info about the server</p>
-<ul class="simple">
-<li>Toptime</li>
-</ul>
+<img alt="../_images/discord-command-status.png" src="../_images/discord-command-status.png" />
+</div>
+<div class="section" id="toptime">
+<h3>Toptime<a class="headerlink" href="#toptime" title="Permalink to this headline">¶</a></h3>
 <p>Which players have spent the most time on your server?</p>
+<dl class="docutils">
+<dt>Arguments:</dt>
+<dd><em>amount</em> The amount of players to show. maximum 20.</dd>
+</dl>
+<img alt="../_images/discord-command-toptime.png" src="../_images/discord-command-toptime.png" />
+</div>
 </div>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
-<p>Go to the website and set it up!</p>
-<p>Chat channel &amp; commands channel</p>
+<p>All discord configuration can be done via the settings page in your servers dashboard.</p>
 </div>
 </div>
 
@@ -198,7 +207,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="ingame.html" class="btn btn-neutral float-right" title="In-game features and functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="ingame.html" class="btn btn-neutral float-right" title="In-game features" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../setting-up/quick-start.html" class="btn btn-neutral" title="Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
