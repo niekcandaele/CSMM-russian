@@ -5,6 +5,7 @@
    features/discord
    features/ingame
    contributing-to-documentation
+   support
    ...
 
 CSMM
@@ -24,10 +25,6 @@ Features
 - Ingame commands
 
 
-Contribute to the documentation
--------------------------------
-
-Blabla
 
 Support
 -------

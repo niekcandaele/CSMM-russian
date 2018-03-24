@@ -5,6 +5,7 @@
    features/discord
    features/ingame
    contributing-to-documentation
+   support
    ...
 
 CSMM
