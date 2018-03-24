@@ -3,24 +3,40 @@ Discord
 
 CSMM has powerful Discord intergration via bot.
 
-Features
---------
 
-- Chat bridge
-Chat from discord directly to the game
+Chat bridge
+------------
+
+Chat from discord directly to the game.
+
+CSMM will automatically grab new messages from the game and send them to your specified discord channel. (and from discord to game aswell)
+
+.. image:: ../images/discord-chatbridge.png
+
 
 Commands
 --------
 
-- Status
+Status
+^^^^^^^^
+
+Aliases: d7, day7
+
 Quickly see some basic info about the server
 
-- Toptime
+.. image:: ../images/discord-command-status.png
+
+Toptime
+^^^^^^^^
+
 Which players have spent the most time on your server?
+
+Arguments: 
+    *amount* The amount of players to show. maximum 20.
+
+.. image:: ../images/discord-command-toptime.png
 
 Configuration
 -------------
 
-Go to the website and set it up!
-
-Chat channel & commands channel
+All discord configuration can be done via the settings page in your servers dashboard.

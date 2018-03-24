@@ -6,7 +6,7 @@ Country ban
 
 Select countries that you do not wish on your server. CSMM will automatically kick anyone joining from an IP in these countries.
 
-**Note** This is very naive protection. Users can get around this with VPN/proxies.
+**Note** This is very naive protection. Users can get around this with VPN/proxies. 
 
 Commands
 --------
