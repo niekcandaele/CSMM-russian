@@ -7,5 +7,5 @@ Quick Start
 
 3. click add a server
 
-3. add your server details server name , server ip, webport , telnetport, telnet password then click submit
+4. add your server details server name , server ip, webport , telnetport, telnet password then click submit
 the web port is the port added by allocs fixes(livemap port) 
