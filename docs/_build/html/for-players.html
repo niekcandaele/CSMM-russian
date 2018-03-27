@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; CSMM  documentation</title>
+  <title>For players &mdash; CSMM  documentation</title>
   
 
   
@@ -36,9 +35,11 @@
         <link rel="author" title="About these documents"
               href="about.html"/>
         <link rel="index" title="Index"
-              href="#"/>
+              href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="CSMM  documentation" href="index.html"/> 
+    <link rel="top" title="CSMM  documentation" href="index.html"/>
+        <link rel="next" title="Support" href="support.html"/>
+        <link rel="prev" title="Contributing to documentation" href="contributing-to-documentation.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -87,12 +88,19 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="setting-up/quick-start.html">Quick Start</a></li>
 <li class="toctree-l1"><a class="reference internal" href="features/discord.html">Discord</a></li>
 <li class="toctree-l1"><a class="reference internal" href="features/ingame.html">In-game features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing-to-documentation.html">Contributing to documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="for-players.html">For players</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">For players</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ingame-commands">Ingame commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#calladmin">Calladmin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#teleports">Teleports</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
 </ul>
@@ -139,12 +147,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Index</li>
+      <li>For players</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/for-players.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -156,11 +166,41 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="for-players">
+<h1>For players<a class="headerlink" href="#for-players" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ingame-commands">
+<h2>Ingame commands<a class="headerlink" href="#ingame-commands" title="Permalink to this headline">¶</a></h2>
+<p>Note: server admins can enable/disable every command. So not every command might work on the server you play on!</p>
+<div class="section" id="calladmin">
+<h3>Calladmin<a class="headerlink" href="#calladmin" title="Permalink to this headline">¶</a></h3>
+<p>Get an admins help with something! This will automatically record your location &amp; inventory.</p>
+<p>Usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$calladmin My bike is glitched
+</pre></div>
+</div>
+<p>A page for your ticket will be made on the website. An admin will (hopefully) resolve your issue soon!</p>
+</div>
+<div class="section" id="teleports">
+<h3>Teleports<a class="headerlink" href="#teleports" title="Permalink to this headline">¶</a></h3>
+<p>Create custom teleport locations.</p>
+<p>Set a new teleport location:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$settele home
+</pre></div>
+</div>
+<p>Teleport to a location:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$tele home
+</pre></div>
+</div>
+<p>Remove a teleport location:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$removetele home
+</pre></div>
+</div>
+<p>List all your saved locations:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$listtele
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 
 
@@ -170,6 +210,15 @@
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="support.html" class="btn btn-neutral float-right" title="Support" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="contributing-to-documentation.html" class="btn btn-neutral" title="Contributing to documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
