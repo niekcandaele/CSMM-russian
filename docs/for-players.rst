@@ -39,6 +39,10 @@ Remove a teleport location::
 List all your saved locations::
 
     $listtele
+    
+Shows all public tps for the server::
+
+    $listtele public
 
 Rename a location::
 
