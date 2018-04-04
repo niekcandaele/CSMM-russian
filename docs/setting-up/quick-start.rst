@@ -1,10 +1,38 @@
 Quick Start
 ===========
 
-1. Install Allocs Fixes
-2. Go to website and login via steam 
-3. Click add a server
-4. Add your server details 
-  The web port is the port added by allocs fixes (livemap port) defined as ControlPanelPort +2 that can be found in serverconfig.xml
-  you can test this port is correct by going to your browser and typing in serverip:webport
-5. Click submit
+Install `Allocs Fixes <https://7dtd.illy.bz/wiki/Server%20fixes>`_.
+--------------------------------------------------------------------
+
+Confirm the webserver is up and running. To do this, you can type ``ip:port`` in your browser. You should see the dynamic map page.
+
+The webserver uses ControlPanelPort+2 as port. You can find ControlPanelPort in your serverconfig.xml. 
+
+Set up authentication credentials for CSMM
+--------------------------------------------
+
+Connect to your server console (telnet, webpanel, ingame should all work) and execute these commands.
+
+Check if you have any set up already::
+
+  webtokens list
+
+Add a new token::
+
+  webtokens add <name> <token> 0
+
+Don't forget the 0 at the end! It's important CSMM has privilege 0 to ensure all functions can properly work.
+
+Reload permissions::
+
+  reloadwebpermissions
+
+**These credentials are sensitive! You should treat these as a password.**
+
+*It is highly recommended to remove any tokens that are not being used.*
+
+Add your server 
+----------------
+
+Go to the website, login and navigate to the add server page. Fill in the info, click submit and you will be taken to your servers dashboard.
+
