@@ -1,8 +1,6 @@
 Discord
 ========
 
-CSMM has powerful Discord intergration via bot.
-
 
 Chat bridge
 ------------
@@ -12,6 +10,10 @@ Chat from discord directly to the game.
 CSMM will automatically grab new messages from the game and send them to your specified discord channel. (and from discord to game aswell)
 
 .. image:: ../images/discord-chatbridge.png
+
+Configured via the website, make sure to add the bot to your server
+
+*Note: make sure the bot has read, send messages permission and permission to embed links!*
 
 
 Commands
@@ -40,3 +42,8 @@ Configuration
 -------------
 
 All discord configuration can be done via the settings page in your servers dashboard.
+
+Link your CSMM profile to Discord
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Go to your profile page on CSMM, look for the Discord ID section and click the Discord icon to log in.
