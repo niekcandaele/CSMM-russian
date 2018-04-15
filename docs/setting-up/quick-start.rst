@@ -6,7 +6,8 @@ Install `Allocs Fixes <https://7dtd.illy.bz/wiki/Server%20fixes>`_.
 
 Confirm the webserver is up and running. To do this, you can type ``ip:port`` in your browser. You should see the dynamic map page.
 
-The webserver uses ControlPanelPort+2 as port. You can find ControlPanelPort in your serverconfig.xml. 
+The webserver uses ControlPanelPort+2 as port. You can find ControlPanelPort in your serverconfig.xml.  
+  ControlPanelPort could also be called query port on some larger hosting providers
 
 Set up authentication credentials for CSMM
 --------------------------------------------
