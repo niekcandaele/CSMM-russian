@@ -38,6 +38,13 @@ Arguments:
 
 .. image:: ../images/discord-command-toptime.png
 
+Admin/ exc commands 
+-------------
+
+Admin ex commands (also known as console commands) can be run by CSMM discord bot as long as the server owner has added you as a admin
+
+.. image:: ../images/discord-command-excommand.png
+
 Configuration
 -------------
 
