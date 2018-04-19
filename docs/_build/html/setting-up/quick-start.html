@@ -89,10 +89,16 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#install-allocs-fixes">Install Allocs Fixes.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#set-up-authentication-credentials-for-csmm">Set up authentication credentials for CSMM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-your-server">Add your server</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../features/discord.html">Discord</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features/ingame.html">In-game features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing-to-documentation.html">Contributing to documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../for-players.html">For players</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../support.html">Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about.html">About</a></li>
 </ul>
@@ -160,18 +166,37 @@
             
   <div class="section" id="quick-start">
 <h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h1>
-<ol class="arabic simple">
-<li>Install Allocs Fixes</li>
-<li>Go to website and login via steam</li>
-<li>Click add a server</li>
-<li>Add your server details</li>
-</ol>
-<blockquote>
-<div>The web port is the port added by allocs fixes (livemap port) defined as ControlPanelPort +2 that can be found in serverconfig.xml
-you can test this port is correct by going to your browser and typing in serverip:webport</div></blockquote>
-<ol class="arabic simple" start="5">
-<li>Click submit</li>
-</ol>
+<div class="section" id="install-allocs-fixes">
+<h2>Install <a class="reference external" href="https://7dtd.illy.bz/wiki/Server%20fixes">Allocs Fixes</a>.<a class="headerlink" href="#install-allocs-fixes" title="Permalink to this headline">¶</a></h2>
+<p>Confirm the webserver is up and running. To do this, you can type <code class="docutils literal notranslate"><span class="pre">ip:port</span></code> in your browser. You should see the dynamic map page.</p>
+<dl class="docutils">
+<dt>The webserver uses ControlPanelPort+2 as port. You can find ControlPanelPort in your serverconfig.xml.</dt>
+<dd>ControlPanelPort could also be called query port on some larger hosting providers</dd>
+</dl>
+</div>
+<div class="section" id="set-up-authentication-credentials-for-csmm">
+<h2>Set up authentication credentials for CSMM<a class="headerlink" href="#set-up-authentication-credentials-for-csmm" title="Permalink to this headline">¶</a></h2>
+<p>Connect to your server console (telnet, webpanel, ingame should all work) and execute these commands.</p>
+<p>Check if you have any set up already:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">webtokens</span> <span class="nb">list</span>
+</pre></div>
+</div>
+<p>Add a new token:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">webtokens</span> <span class="n">add</span> <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">token</span><span class="o">&gt;</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<p>Don’t forget the 0 at the end! It’s important CSMM has privilege 0 to ensure all functions can properly work.</p>
+<p>Reload permissions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">reloadwebpermissions</span>
+</pre></div>
+</div>
+<p><strong>These credentials are sensitive! You should treat these as a password.</strong></p>
+<p><em>It is highly recommended to remove any tokens that are not being used.</em></p>
+</div>
+<div class="section" id="add-your-server">
+<h2>Add your server<a class="headerlink" href="#add-your-server" title="Permalink to this headline">¶</a></h2>
+<p>Go to the website, login and navigate to the add server page. Fill in the info, click submit and you will be taken to your servers dashboard.</p>
+</div>
 </div>
 
 

@@ -22,21 +22,37 @@ A page for your ticket will be made on the website. An admin will (hopefully) re
 Teleports
 ^^^^^^^^^^
 
-Create custom teleport locations.
+Create custom teleport locations. You can set your teleport location to public and give the name to your friends. 
 
 Set a new teleport location::
 
-    $settele home
+    $settele teleportName
 
 Teleport to a location::
 
-    $tele home
+    $tele teleportName
 
 Remove a teleport location::
 
-    $removetele home
+    $removetele teleportName
 
 List all your saved locations::
 
     $listtele
+    
+Shows all public tps for the server::
+
+    $listtele public
+
+Rename a location::
+
+    $renametele oldName newName
+
+Set a teleleport location to public::
+
+    $telepublic teleportName
+
+Set a teleport location to private::
+
+    $teleprivate teleportName
 

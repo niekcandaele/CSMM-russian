@@ -95,13 +95,16 @@
 <li class="toctree-l2"><a class="reference internal" href="#country-ban">Country ban</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#calladmin">calladmin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-commands">Custom commands</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#message-of-the-day">Message of the day</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#support-tickets">Support tickets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#economy">Economy</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing-to-documentation.html">Contributing to documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../for-players.html">For players</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../support.html">Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about.html">About</a></li>
 </ul>
@@ -180,6 +183,28 @@
 <h3>calladmin<a class="headerlink" href="#calladmin" title="Permalink to this headline">¶</a></h3>
 <p>Create a support ticket. CSMM will collect some data such as your inventory and location to display along the ticket.</p>
 </div>
+<div class="section" id="custom-commands">
+<h3>Custom commands<a class="headerlink" href="#custom-commands" title="Permalink to this headline">¶</a></h3>
+<p>Admins can create custom ingame commands. You can set delay, timeout, cost of the command.</p>
+<p>For example:</p>
+<p>$discord:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">say</span> <span class="n">linkToDiscord</span>
+</pre></div>
+</div>
+<p>You can execute multiple commands by separating with “;”:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">say</span> <span class="s2">&quot;Here is one message&quot;</span><span class="p">;</span><span class="n">say</span> <span class="s2">&quot;Here is the second!&quot;</span>
+</pre></div>
+</div>
+<p>You have access to the players steam and entity ID with “${steamId}” and “${entityId}”:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>sayplayer ${entityId} &quot;WAZAAAAAAAAAAAAA&quot;
+</pre></div>
+</div>
+<p>Examples</p>
+<p>$safehouse:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>teleportplayer ${entityId} 15 85 -53; sayplayer ${steamId} &quot;You are safe now.&quot;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="message-of-the-day">
 <h2>Message of the day<a class="headerlink" href="#message-of-the-day" title="Permalink to this headline">¶</a></h2>
@@ -189,6 +214,11 @@
 <div class="section" id="support-tickets">
 <h2>Support tickets<a class="headerlink" href="#support-tickets" title="Permalink to this headline">¶</a></h2>
 <p>Players can create support tickets with the corresponding command (if enabled). This is a great way for players to ask admins for some assistance, even when there is no admin currently online.</p>
+</div>
+<div class="section" id="economy">
+<h2>Economy<a class="headerlink" href="#economy" title="Permalink to this headline">¶</a></h2>
+<p>Currently in beta - donator only</p>
+<p>The economy module allows admins to set a cost to multiple actions (teleports, custom commands, …). Players can earn money by being ingame</p>
 </div>
 </div>
 

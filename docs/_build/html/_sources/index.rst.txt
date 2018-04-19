@@ -8,7 +8,6 @@
    for-players
    support
    about
-   ...
 
 CSMM
 ========
