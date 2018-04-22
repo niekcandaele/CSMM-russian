@@ -41,8 +41,17 @@ $safehouse::
 
     teleportplayer ${entityId} 15 85 -53; sayplayer ${steamId} "You are safe now."
 
+$animals::
 
+    spawnmultipleentity ${entityId} 5 @ 59 59 60 61
+    
+$animals-advanced::
 
+    spawnmultipleentity ${entityId} 5 @ 59 59 59 59 64
+
+$brutality::
+
+    say "Die Bitch" ;spawnmultipleentity ${entityId} 15 @ 2 3 4 5 6 9 15 15 15 17 18 19 21 31 31 35 40 40 45 46 53 56 63 63 63 63 64 67 67 67 70
 
 
 Message of the day
