@@ -38,9 +38,23 @@ Arguments:
 
 .. image:: ../images/discord-command-toptime.png
 
-Admin/ exc commands 
+Player
+^^^^^^^^
+detailed Player profile lookup 
+
+.. image:: ../images/Discord-player-command.png
+
+Admin commands 
 ---------------------
 
+Lookup
+^^^^^^^^
+detailed lookup for admins including inventory and steam id
+
+.. image:: ../images/Discord-Lookup-command.png
+
+Admin exec console commands
+^^^^^^^^
 Admin ex commands (also known as console commands) can be run by CSMM discord bot as long as the server owner has added you as a admin
 
 .. image:: ../images/discord-command-excommand.png
