@@ -55,4 +55,9 @@ Set a teleleport location to public::
 Set a teleport location to private::
 
     $teleprivate teleportName
+    
+Economy
+^^^^^^^^^^
+find out your economy balance::
 
+    $balance
