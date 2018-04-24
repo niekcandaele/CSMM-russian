@@ -53,7 +53,10 @@ $brutality::
 
     say "Die Bitch" ;spawnmultipleentity ${entityId} 15 @ 2 3 4 5 6 9 15 15 15 17 18 19 21 31 31 35 40 40 45 46 53 56 63 63 63 63 64 67 67 67 70
 
+Spawnmultipleentity is a coppis command for anyone without see example below
 
+    Spawnentity ${entityId} 59 ;Spawnentity ${entityId} 59
+    
 Message of the day
 ------------------
 
