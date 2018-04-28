@@ -53,9 +53,9 @@ $brutality::
 
     say "Die Bitch" ;spawnmultipleentity ${entityId} 15 @ 2 3 4 5 6 9 15 15 15 17 18 19 21 31 31 35 40 40 45 46 53 56 63 63 63 63 64 67 67 67 70
 
-Spawnmultipleentity is a coppis command for anyone without see example below
+Spawnmultipleentity is a coppis command for anyone without see example below::
 
-    Spawnentity ${entityId} 59 ;Spawnentity ${entityId} 59
+    Spawnentity ${entityId} 59 ;Spawnentity ${entityId} 59
     
 Message of the day
 ------------------
@@ -74,6 +74,7 @@ Players can create support tickets with the corresponding command (if enabled). 
 Economy
 ---------
 
-Currently in beta - donator only
+The economy module allows admins to set a cost to multiple actions (teleports, custom commands, ...). Players can earn money by being ingame or via discord (discord text earner)  the player logins to csmm goes to there profile page and logs with discord
 
-The economy module allows admins to set a cost to multiple actions (teleports, custom commands, ...). Players can earn money by being ingame
+currency name is also configurable: name the currency yourself
+
