@@ -58,6 +58,46 @@ Arguments:
 
 .. image:: ../images/discord-command-top-deaths.png
 
+top players
+^^^^^^^^
+
+Which players have killed the most players on your server?
+
+Arguments: 
+    *amount* The amount of players to show. maximum 20.
+
+.. image:: ../images/discord-command-top-players.png
+
+Top currency
+^^^^^^^^
+
+Which players have the most currency on your server?
+
+Arguments: 
+    *amount* The amount of players to show. maximum 20.
+
+.. image:: ../images/discord-command-top-currency.png
+
+Top level
+^^^^^^^^
+
+Which players have the highest level on your server?
+
+Arguments: 
+    *amount* The amount of players to show. maximum 20.
+
+.. image:: ../images/discord-command-top-level.png
+
+Top score
+^^^^^^^^
+
+Which players have the highest score your server?
+
+Arguments: 
+    *amount* The amount of players to show. maximum 20.
+
+.. image:: ../images/discord-command-top-score.png
+
 Player
 ^^^^^^^^
 detailed Player profile lookup 
