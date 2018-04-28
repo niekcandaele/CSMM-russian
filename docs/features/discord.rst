@@ -28,7 +28,7 @@ Quickly see some basic info about the server
 
 .. image:: ../images/discord-command-status.png
 
-Toptime
+Top playtime
 ^^^^^^^^
 
 Which players have spent the most time on your server?
@@ -36,7 +36,27 @@ Which players have spent the most time on your server?
 Arguments: 
     *amount* The amount of players to show. maximum 20.
 
-.. image:: ../images/discord-command-toptime.png
+.. image:: ../images/discord-command-top-playtime.png
+
+Top zombies
+^^^^^^^^
+
+Which players have killed the most zombies on your server?
+
+Arguments: 
+    *amount* The amount of players to show. maximum 20.
+
+.. image:: ../images/discord-command-top-zombies.png
+
+Top deaths
+^^^^^^^^
+
+Which players have died the most on your server?
+
+Arguments: 
+    *amount* The amount of players to show. maximum 20.
+
+.. image:: ../images/discord-command-top-deaths.png
 
 Player
 ^^^^^^^^
