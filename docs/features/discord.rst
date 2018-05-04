@@ -28,6 +28,13 @@ Quickly see some basic info about the server
 
 .. image:: ../images/discord-command-status.png
 
+listservers
+^^^^^^^^
+
+Quick and basic list of the server you have
+
+.. image:: ../images/discord-command-listservers.png
+
 Top playtime
 ^^^^^^^^
 
