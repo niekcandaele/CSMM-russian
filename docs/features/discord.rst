@@ -137,6 +137,10 @@ Admin exec console commands
 ^^^^^^^^
 Admin ex commands (also known as console commands) can be run by CSMM discord bot as long as the server owner has added you as a admin
 
+*Note: If you have multiple servers ex commands will take an extra argument. This server selector argument is always the last argument of the command.*
+
+*eg: ex mem becomes ex "mem" 1 or ex "mem" 2 or ex 'say "hello everyone"' 2*
+
 .. image:: ../images/discord-command-excommand.png
 
 Configuration
