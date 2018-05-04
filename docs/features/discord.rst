@@ -20,7 +20,7 @@ Commands
 ----------
 
 **Multiple 7dtd servers per discord guild**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 *Note: If you have multiple servers commands will take an extra argument. This server selector argument is always the last argument of the command.*
 
 *eg: Status becomes status 1 or status 2*
