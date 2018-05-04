@@ -20,6 +20,8 @@ Custom commands
 
 Admins can create custom ingame commands. You can set delay, timeout, cost of the command.
 
+**note: If a custom command has same name as an existing csmm command, the existing csmm command will always take precendence. the custom command never gets executed**
+
 For example: 
 
 $discord::
