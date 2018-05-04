@@ -28,7 +28,8 @@ Reload permissions::
 
   reloadwebpermissions
 
-**These credentials are sensitive! You should treat these as a password.**
+**These credentials are sensitive! You should treat these as a password. (Keep it secret, no obvious names/tokens)**
+**its advised to use a combination of numbers, letters, lowercase and uppercase aswell as symbols**
 
 *It is highly recommended to remove any tokens that are not being used.*
 
