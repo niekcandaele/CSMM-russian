@@ -143,6 +143,38 @@ Admin ex commands (also known as console commands) can be run by CSMM discord bo
 
 .. image:: ../images/discord-command-excommand.png
 
+Notifications
+----------
+**Ticket Notfiication**
+
+*Discord ticket notificaiton for csmms ticket function $calladmin*
+
+.. image:: ../images/discord-ticket-notification.png
+
+**Lost and Connected Notification**
+
+*Get notified when csmm loses and connects to your 7days server*
+
+.. image:: ../images/discord-connection-notification.png
+
+**CSMM Restart Notfiication**
+
+*A notification that shows when csmm restarts*
+
+.. image:: ../images/discord-restart-notification.png
+
+**Chatbridge Notfiication**
+
+*A notifcation that shows what channel in discord is set for chatbridge*
+
+.. image:: ../images/discord-chatbridge-notification.png
+
+**Country Ban Notfiication**
+
+*A notification that shows when a player get banned for a country you have set for country ban in csmm*
+
+.. image:: ../images/discord-countryBan-notification.jpg
+
 Configuration
 -------------
 
