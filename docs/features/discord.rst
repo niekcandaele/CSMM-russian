@@ -149,31 +149,31 @@ Notifications
 
 *Discord ticket notificaiton for csmms ticket function $calladmin*
 
-.. image:: ../images/discord-ticket-notification.png
+.. image:: ../images/Discord-ticket-notification.png
 
 **Lost and Connected Notification**
 
 *Get notified when csmm loses and connects to your 7days server*
 
-.. image:: ../images/discord-connection-notification.png
+.. image:: ../images/Discord-connection-notification.png
 
 **CSMM Restart Notfiication**
 
 *A notification that shows when csmm restarts*
 
-.. image:: ../images/discord-restart-notification.png
+.. image:: ../images/Discord-restart-notification.png
 
 **Chatbridge Notfiication**
 
 *A notifcation that shows what channel in discord is set for chatbridge*
 
-.. image:: ../images/discord-chatbridge-notification.png
+.. image:: ../images/Discord-chatbridge-notification.png
 
 **Country Ban Notfiication**
 
 *A notification that shows when a player get banned for a country you have set for country ban in csmm*
 
-.. image:: ../images/discord-countryBan-notification.jpg
+.. image:: ../images/Discord-countryBan-notification.jpg
 
 Configuration
 -------------
