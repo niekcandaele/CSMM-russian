@@ -1,43 +1,43 @@
-In-game features
+Внутриигровые функции
 =================
 
 Country ban
 -----------
 
-Select countries that you do not wish on your server. CSMM will automatically kick anyone joining from an IP in these countries.
+Выберите страны, игроков из которых Вы не хотите видеть на своем сервере. CSMM будет автоматически отключать любого, чей IP принадлежит этим странам.
 
-**Note** This is very naive protection. Users can get around this with VPN/proxies. 
+**Примечание** Это достаточно простенькая защита. Игроки могут воспользоваться VPN или proxy сервисами. 
 
-Commands
+Комманды 
 --------
 
 calladmin
 ^^^^^^^^^^
-Create a support ticket. CSMM will collect some data such as your inventory and location to display along the ticket.
+Создать запрос к админам за техподдержкой. CSMM автоматически собирает необходимые данные, такие как ваши координаты, а также инвентарь.
 
-Custom commands
+Настраиваемые команды
 ^^^^^^^^^^^^^^^^
 
-Admins can create custom ingame commands. You can set delay, timeout, cost of the command.
+Админы могут создать собственные игровые комманды. Можно задать длительность, задержку и стоимость пользования коммандами.
 
-**note: If a custom command has same name as an existing csmm command, the existing csmm command will always take precendence. the custom command never gets executed**
+**Примечание: Если имя такой комманды будет совпадать со встроенной в CSMM, будет встроенная имеет высший приоритет. Настраиваея комманда никогда не будет исполняться**
 
-For example: 
+Примеры: 
 
 $discord::
 
     say linkToDiscord
 
-You can execute multiple commands by separating with ";"::
+Вы можете выполнить несколько комманд, разделяя их ";"::
 
     say "Here is one message";say "Here is the second!"
 
-You have access to the players steam and entity ID with "${steamId}" and "${entityId}"::
+Вы можете отобразить имя пользователя в steam и его ID в 7days с помощью "${steamId}" и "${entityId}"::
 
     sayplayer ${entityId} "WAZAAAAAAAAAAAAA"
 
 
-Examples
+Примеры
 
 $safehouse::
 
@@ -55,28 +55,27 @@ $brutality::
 
     say "Die Bitch" ;spawnmultipleentity ${entityId} 15 @ 2 3 4 5 6 9 15 15 15 17 18 19 21 31 31 35 40 40 45 46 53 56 63 63 63 63 64 67 67 67 70
 
-Spawnmultipleentity is a coppis command for anyone without see example below::
+Spawnmultipleentity это комманда из мода Сoppi's. Если у вас он не установлен, смотрите следующий пример::
 
     Spawnentity ${entityId} 59 ;Spawnentity ${entityId} 59
     
-Message of the day
+Message of the day (автоинформатор)
 ------------------
 
-Set a message to be sent to players when they join the server and/or show this message periodically to all players.
+Установить сообщение, демонстрируемое игрокам при подключении к серверу и/или сообщения отображаемое по таймеру все игрокам находящимся онлай
 
-This is useful to advertise your discord server, remind people to abide by the rules etc
+Это полезная функция для приглашения людей в Discord, напоминаная о необходимости соблюдения правил и т.д.
 
 
-
-Support tickets
+Запросы поддержки 
 -----------------
 
-Players can create support tickets with the corresponding command (if enabled). This is a great way for players to ask admins for some assistance, even when there is no admin currently online.
+Игроки могут создавать запросы на поддержку соответствующей коммандой (если она включена). Это прекрасная возможность для игроков попросить админов о помощи, даже если они не онлайн
 
-Economy
+Экономика
 ---------
 
-The economy module allows admins to set a cost to multiple actions (teleports, custom commands, ...). Players can earn money by being ingame or via discord (discord text earner)  the player logins to csmm goes to there profile page and logs with discord
+Модуль экономики позволяетадминам установить стоимость пользования определенными функциями (телепорты, настраиваемые комманды и т.д.). Игроки могут зарабатывать to earn монеты за нахождение онлайн, убийство зомби и других игроков, а также за отправление соообщений в дискорде (требует подключения его Discord аккаунта к аккаунту CSMM на страничке профиля)
 
-currency name is also configurable: name the currency yourself
+Название монеток также настраивается: назоаите свою монету, как хотите 
 
