@@ -1,40 +1,40 @@
-Quick Start
+Быстрый старт
 ===========
 
-Install `Allocs Fixes <https://7dtd.illy.bz/wiki/Server%20fixes>`_.
+Установите на сервер мод `Allocs Fixes <https://7dtd.illy.bz/wiki/Server%20fixes>`_.
 --------------------------------------------------------------------
 
-Confirm the webserver is up and running. To do this, you can type ``ip:port`` in your browser. You should see the dynamic map page.
+Запустите сервер. Убедитесь что мод работает корректно. для проверки наберите ``ip:port`` в вашем браузере. Вы должны увидеть страницу с картой.
 
-The webserver uses ControlPanelPort+2 as port. You can find ControlPanelPort in your serverconfig.xml.  
-  ControlPanelPort could also be called query port on some larger hosting providers
+Вебсервер использует порт с номером  ControlPanelPort+2 . Вы можете узнать ваш ControlPanelPort в файле serverconfig.xml на сервере.  
+  ControlPanelPort также может называться query port у некоторых крупных хостинг провайдеров 
 
-Set up authentication credentials for CSMM
+Настройка аутентификации для CSMM
 --------------------------------------------
 
-Connect to your server console (telnet, webpanel, ingame should all work) and execute these commands.
+Подключитесь к консоли вашего сервера (telnet, webpanel, либо войдите в консоль из игры. Все варианты работают) и выполните следующие комманды.
 
-Check if you have any set up already::
+Проверьте, не был ли настроен доступ ранее::
 
   webtokens list
 
-Add a new token::
+Если нет - добавьте новый webtoken::
 
   webtokens add <name> <token> 0
 
-Don't forget the 0 at the end! It's important CSMM has privilege 0 to ensure all functions can properly work.
+Не забудьте 0 на конце! Это важно, чтобы CSMM имел уровень привилегий 0 для полноценного функционирования.
 
-Reload permissions::
+Перезагрузите разрешения webtoken::
 
   reloadwebpermissions
 
-**These credentials are sensitive! You should treat these as a password. (Keep it secret, no obvious names/tokens)**
-**its advised to use a combination of numbers, letters, lowercase and uppercase aswell as symbols**
+**Имя и сам токен чувствительны к регистру! Относитесь к ним как к админскому паролю.**
+**(никому не показывайте, не используйте легко угадываемых имен/значений webtokens)**
+**Рекомендуется использовать комбинацию цифр, заглавных и прописных английских букв, а также символов**
 
-*It is highly recommended to remove any tokens that are not being used.*
+*по соображениям безопасности удаляйте неиспользуемые webtoken-ы *
 
-Add your server 
+Добавляем сервер в систему 
 ----------------
 
-Go to the website, login and navigate to the add server page. Fill in the info, click submit and you will be taken to your servers dashboard.
-
+Зайдите на вебсайт CSMM, авторизуйтесь через STEAM и нажмите "add server". Заполните данные и нажмите "submit". Вам станет доступна панель управления сервером (Dashboard).
