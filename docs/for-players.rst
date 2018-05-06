@@ -1,63 +1,63 @@
-For players
+Для игроков
 ************
 
 
-Ingame commands
+Внутриигровые комманды
 ================
 
-Note: server admins can enable/disable every command. So not every command might work on the server you play on!
+Примечание: админы сервера могут включить/выключить каждую из комманд. Так что не все из перечисленных могут работать на сервере, где вы играете! Команда набирается в ЧАТЕ игры
 
 Calladmin
 ^^^^^^^^^^
 
-Get an admins help with something! This will automatically record your location & inventory.
+Обратиться к админу с какой либо проблеммой. Эта комманда автоматически записывает ваше местоположение (координаты) и инвентарь. 
 
 
-Usage::
+Использование ::
 
-    $calladmin My bike is glitched
+    $calladmin Мой байк застрял!
 
-A page for your ticket will be made on the website. An admin will (hopefully) resolve your issue soon!
+Страничка с вашим обращением будет создана на вебсайте. Админ вскоре (надеемся) свяжется с Вами для устанения проблемы!
 
 Teleports
 ^^^^^^^^^^
 
-Create custom teleport locations. You can set your teleport location to public and give the name to your friends. 
+Создает точку для телепортации. Вы можете, при желании, поделиться этой точкой с остальными игроками. 
 
-Set a new teleport location::
+Установить новую точку (по умолчанию не видна другим игрокам). Придумайте уникальное имя, т.к оно не должно совпадать с названиями точек других игроков. ВНИМАНИЕ! Название должно состоять только из цифр и английских букв::
 
-    $settele teleportName
+    $settele MyTeleportPointName
 
-Teleport to a location::
+Телепортироваться в точку::
 
-    $tele teleportName
+    $tele MyTeleportPointName
 
-Remove a teleport location::
+Стереть точку телепортации::
 
-    $removetele teleportName
+    $removetele MyTeleportPointName
 
-List all your saved locations::
+Вывести список точек::
 
     $listtele
     
-Shows all public tps for the server::
+Показать все общедоступные точки телепортации для сервера::
 
     $listtele public
 
-Rename a location::
+Переименовать точку телепорта::
 
     $renametele oldName newName
 
-Set a teleleport location to public::
+Сделать точку телепорта общедоступной::
 
-    $telepublic teleportName
+    $telepublic MyTeleportPointName
 
-Set a teleport location to private::
+Сделать точку телепорта частной::
 
     $teleprivate teleportName
     
-Economy
+Экономика
 ^^^^^^^^^^
-find out your economy balance::
+Узнать состояние вашего кошелька::
 
     $balance
