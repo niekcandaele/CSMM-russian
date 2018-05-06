@@ -18,7 +18,7 @@ CSMM is a server manager for 7 Days to Die.
     - Cloud hosted - You do not need to worry about getting another VPS
     - Discord bot integration
 
-This is the russian translation of the project. It is community maintained and might not be 100% up to date. Be sure to check the English docs if you have issues.
+This is the russian translation of the project. It is community maintained and might not be 100% up to date. Be sure to check the English docs if you have issues. It is in active development, see the staging branch for the newest updates.
 
 Links
 -------
