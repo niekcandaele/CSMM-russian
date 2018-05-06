@@ -12,20 +12,20 @@
 CSMM
 ========
 
-CSMM is a server manager for 7 Days to Die.
+CSMM это система управления для серверов игры 7 Days to Die.
 
-    - Monitor your server via  a web interface
-    - Cloud hosted - You do not need to worry about getting another VPS
-    - Discord bot integration
+    - Управляйте своим сервером через web интерфейс
+    - Находится в облаке - Вам не нужно её никуда устанавливать
+    - Интеграция с ботом для Discord 
 
 
-Links
+Ссылки
 -------
 
-- `Issue tracker <https://github.com/niekcandaele/CSMM-issues>`_  
-- `Discord server <https://discordapp.com/invite/kuDJG6e>`_  
+- `Баг трекер <https://github.com/niekcandaele/CSMM-issues>`_  
+- `Сервер Discord <https://discordapp.com/invite/kuDJG6e>`_  
 
-License
+Лицензия на использование 
 -------
 
-The project is licensed under the MIT license.
+Этот проект доступен по лицензии MIT.
