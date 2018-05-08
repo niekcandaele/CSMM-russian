@@ -2,185 +2,185 @@ Discord
 ===========
 
 
-Chat bridge
+Чат мост
 --------------
 
-Chat from discord directly to the game.
+Отправляйте сообщения из Discord-а напрямую в игру. Смотрите чат игры в Discord-е
 
-CSMM will automatically grab new messages from the game and send them to your specified discord channel. (and from discord to game aswell)
+CSMM автоматически распознает сообещения чата в игре и направляет их в указанный в настрйоках канал Discord-а. (и также из Discord-а в игру)
 
 .. image:: ../images/discord-chatbridge.png
 
-Configured via the website, make sure to add the bot to your server
+Функция настраивается через вебсайт. Не забудьте добавить бота к себе на сервер
 
-*Note: make sure the bot has read, send messages permission and permission to embed links!*
+*ВНИМАНИЕ: Убедитесь что у бота есть прав на чтение, отсылку сообщений и вставку ссылок во всех задействоованых каналах!*
 
 
-Commands
+Комманды
 ----------
 
-**Multiple 7dtd servers per discord guild**
+**Несколько серверов 7dtd на одном Discord сервере**
 
-*Note: If you have multiple servers commands will take an extra argument. This server selector argument is always the last argument of the command.*
+*Примечание: Если у вас несколько игровых серверов, в коммандной строке нужно добавлять дополнительный аргумент. Это порядковый номер сервера и он всегда добавляется в конце комманды.*
 
-*eg: Status becomes status 1 or status 2*
+*например: комманда Status становится status 1 или status 2*
 
 Status
 ^^^^^^^^
 
-Aliases: d7, day7
+Синонимы: d7, day7
 
-Quickly see some basic info about the server
+Выводит краткую информацию о сервере
 
 .. image:: ../images/discord-command-status.png
 
 Listservers
 ^^^^^^^^
 
-Quick and basic list of the server you have
+Выводит краткий список ваших серверов
 
 .. image:: ../images/discord-command-listservers.png
 
 Serverinfo
 ^^^^^^^^
 
-Detailed infomation about your server and settings 
+Подробная информация о сервере и его настройках
 
 .. image:: ../images/discord-command-serverinfo.png
 
 Top playtime
 ^^^^^^^^
 
-Which players have spent the most time on your server?
+Рейтинг игроков по параметру "время игры на вашем сервере"
 
-Arguments: 
-    *amount* The amount of players to show. maximum 20.
+параметры: 
+    *количество* - Количество отображаемых в списке игроков. Максимум 20.
 
 .. image:: ../images/discord-command-top-playtime.png
 
 Top zombies
 ^^^^^^^^
 
-Which players have killed the most zombies on your server?
+Рейтинг игроков по параметру "количество убитых зомби"
 
-Arguments: 
-    *amount* The amount of players to show. maximum 20.
+Параметры: 
+    *количество* - Количество отображаемых в списке игроков. Максимум 20.
 
 .. image:: ../images/discord-command-top-zombies.png
 
 Top deaths
 ^^^^^^^^
 
-Which players have died the most on your server?
+Рейтинг игроков по параметру "количество смертей"
 
-Arguments: 
-    *amount* The amount of players to show. maximum 20.
+Параметры: 
+    *количество* - Количество отображаемых в списке игроков. Максимум 20.
 
 .. image:: ../images/discord-command-top-deaths.png
 
-top players
+Top players
 ^^^^^^^^
 
-Which players have killed the most players on your server?
+Рейтинг игроков по параметру "количество убийств других игроков в ПВП"
 
-Arguments: 
-    *amount* The amount of players to show. maximum 20.
+Параметры: 
+    *количество* - Количество отображаемых в списке игроков. Максимум 20.
 
 .. image:: ../images/discord-command-top-players.png
 
 Top currency
 ^^^^^^^^
 
-Which players have the most currency on your server?
+Рейтинг игроков по параметру "Количество денег"
 
-Arguments: 
-    *amount* The amount of players to show. maximum 20.
+Параметры: 
+    *количество* - Количество отображаемых в списке игроков. Максимум 20.
 
 .. image:: ../images/discord-command-top-currency.png
 
 Top level
 ^^^^^^^^
 
-Which players have the highest level on your server?
+Рейтинг игроков по параметру "Уровень"
 
-Arguments: 
-    *amount* The amount of players to show. maximum 20.
+Параметры: 
+    *количество* - Количество отображаемых в списке игроков. Максимум 20.
 
 .. image:: ../images/discord-command-top-level.png
 
 Top score
 ^^^^^^^^
 
-Which players have the highest score your server?
+Рейтинг игроков по очкам 
 
-Arguments: 
-    *amount* The amount of players to show. maximum 20.
+Параметры: 
+    *количество* - Количество отображаемых в списке игроков. Максимум 20.
 
 .. image:: ../images/discord-command-top-score.png
 
 Player
 ^^^^^^^^
-detailed Player profile lookup 
+Детальная информация о профиле игрока 
 
 .. image:: ../images/Discord-player-command.png
 
-Admin commands 
+Админские команды 
 ---------------------
 
 Lookup
 ^^^^^^^^
-detailed lookup for admins including inventory and steam id
+Детальная информация по профилю игрока, включая положение на карте,инвентарь и SteamId
 
 .. image:: ../images/Discord-Lookup-command.png
 
-Admin exec console commands
+Админские команды для исполнения на сервере
 ^^^^^^^^
-Admin ex commands (also known as console commands) can be run by CSMM discord bot as long as the server owner has added you as a admin
+Админские исполняемые команды (также известные как EX комманды или консольные комманды) могут быть выполнены через CSMM бот в Discord-е, если владелец  добавил вас в админы сервера в настройках CSMM 
 
-*Note: If you have multiple servers ex commands will take an extra argument. This server selector argument is always the last argument of the command.*
+*Примечание: Если у вас подключено несколько серверов, EX комманды требуют дополнительный аргумент. Это номер сервера, на котором должна быть выполнена комманда. Добавляется в конце строки.*
 
-*eg: ex mem becomes ex "mem" 1 or ex "mem" 2 or ex 'say "hello everyone"' 2*
+*т.е.: вместо ex mem вводится ex "mem" 1 или ex "mem" 2 или ex 'say "hello everyone"' 2*
 
 .. image:: ../images/discord-command-excommand.png
 
-Notifications
+УВЕДОМЛЕНИЯ
 ----------
-**Ticket Notfiication**
+**Уведомления о запросах**
 
-*Discord ticket notificaiton for csmms ticket function $calladmin*
+*Уведомления в Discord о созданных через комманду  $calladmin запросах*
 
 .. image:: ../images/Discord-ticket-notification.png
 
-**Lost and Connected Notification**
+**Потеря соединения/подключение**
 
-*Get notified when csmm loses and connects to your 7days server*
+*Получчайте уведомление, когда CSMM теряет соединение или подключается к Вашему серверу игры 7 days to die*
 
 .. image:: ../images/Discord-connection-notification.png
 
-**CSMM Restart Notfiication**
+**Уведомления о рестарте CSMM**
 
-*A notification that shows when csmm restarts*
+*Уведомление, которое отображается в случе рестарта системы CSMM*
 
 .. image:: ../images/Discord-restart-notification.png
 
-**Chatbridge Notfiication**
+**Уведомление о  подключении чат моста**
 
-*A notifcation that shows what channel in discord is set for chatbridge*
+*Уведомление отображается при выборе канала в Discord для чат моста*
 
 .. image:: ../images/Discord-chatbridge-notification.png
 
-**Country Ban Notfiication**
+**Блокировка по стране**
 
-*A notification that shows when a player get banned for a country you have set for country ban in csmm*
+*Уведомление, отображаемое при блоке игрока из списка нежелательных стран в CSMM*
 
 .. image:: ../images/Discord-countryBan-notification.jpg
 
-Configuration
+Конфигурация
 -------------
 
-All discord configuration can be done via the settings page in your servers dashboard.
+Вся конфигурация интерфейса с Discord производится из страницы settings в панели управления сервером.
 
-Link your CSMM profile to Discord
+Интеграция вашего профиля CSMM с профилем в Discord
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Go to your profile page on CSMM, look for the Discord ID section and click the Discord icon to log in.
+Зайдите на страницу Вашего профиля в CSMM, выберите секцию Discord ID и нажмите на значек Discord для подключения.

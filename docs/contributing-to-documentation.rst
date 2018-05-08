@@ -1,49 +1,47 @@
-Contributing to documentation
+Внести свой вклад в написание документации
 =============================
 
-Here's a handy cheatsheet for the markup in this documentation
+Ссылка с полезной информацией по форматированию 
 
 https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst
 
 Github
 ------
 
-If you are ok with using a web interface or just want to make some small change you can use the 'Edit on Github' buttons
+Если вы знакомы с a web интерфейсом Github и хотите внести незначительные изменения, то можете использовать кнопку 'Edit on Github'
 
-Local Build
+Работа с локальными файлами
 -----------
 
-If you'd rather work on your own machine, in a more powerful editor, here are some steps to do this
+Если же Вы предпочитаете работать с текстом на своем компьютере в полноценном редакторе, вот список необходимых действий (инструкция для Linux)
 
-Make sure python & pip are installed
+Убедитесь что у вас инсталированы python и pip
 
-Install Sphinx::
+Установите Sphinx::
 
     pip install sphinx sphinx-autobuild sphinx_rtd_theme
 
-Create a new folder::
+Создайте новую папку::
 
     mkdir csmm-docs
     cd csmm-docs
 
-Clone the documentation repository to your machine::
+Клонируйте репозиторий с документацией на локальный компьютер::
 
     git init
     git pull https://github.com/niekcandaele/CSMM-issues
 
-Write some docs!
+Редактируйте!
 
-Build your new version::
+Собрать новую версию::
 
      make html
 
-Open index.html from the _build folder to see the docs.
+Откройте index.html из папки _build чтобы просмотреть итоговый вариант.
 
-Autmatically rebuild when a file changes::
+Автоматическая пересборка при изменении файлов::
 
     sphinx-autobuild . _build/html
 
 
-
-Once you have changes to add, open up a pull request!
-
+После внесения всех изменение, создайте pull request!

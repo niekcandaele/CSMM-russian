@@ -1,40 +1,56 @@
-Quick Start
+Быстрый старт
 ===========
 
-Install `Allocs Fixes <https://7dtd.illy.bz/wiki/Server%20fixes>`_.
+Установите на сервер мод `Allocs Fixes <https://7dtd.illy.bz/wiki/Server%20fixes>`_.
 --------------------------------------------------------------------
 
-Confirm the webserver is up and running. To do this, you can type ``ip:port`` in your browser. You should see the dynamic map page.
+Запустите сервер и дождитесь его полной загрузки.  Убедитесь что мод работает корректно. для проверки наберите ``ip:port`` в вашем браузере. IP означает адрес игрового сервера, port - номер порта встроенного вебсервера из мода Allocs Fixex. Вы должны увидеть страницу с картой.
 
-The webserver uses ControlPanelPort+2 as port. You can find ControlPanelPort in your serverconfig.xml.  
-  ControlPanelPort could also be called query port on some larger hosting providers
+Вебсервер использует порт с номером на 2 большим, чем ControlPanelPort. Вы можете узнать номер ControlPanelPort в файле serverconfig.xml на сервере. 
 
-Set up authentication credentials for CSMM
+**Примечания**
+* - Проверьте настройки сетевого оборудования.*
+*    Порт вебсервера должнен быть: 1. Проброшен (PortForward) 2. Рарешен для подключения*
+* - ControlPanelPort также может называться query port у некоторых крупных хостинг провайдеров*
+
+Настройка аутентификации для CSMM
 --------------------------------------------
 
-Connect to your server console (telnet, webpanel, ingame should all work) and execute these commands.
+Подключитесь к консоли вашего сервера (через telnet, webpanel, либо войдите в консоль из игры. Любой вариант годится) и выполните следующие комманды.
 
-Check if you have any set up already::
+Проверьте, не был ли настроен доступ ранее::
 
   webtokens list
 
-Add a new token::
+Если нет - придумайте name(имя) и webtoken(пароль), затем добавьте его::
 
   webtokens add <name> <token> 0
 
-Don't forget the 0 at the end! It's important CSMM has privilege 0 to ensure all functions can properly work.
+Не забудьте 0 на конце! Это важно, чтобы CSMM имел уровень привилегий 0 для полноценного функционирования.
+Запишите или запомните имя и токен, они будут нужны вам для подключения сервера в web интерфейсе CSMM
 
-Reload permissions::
+**Имя и сам токен чувствительны к регистру! Относитесь к ним как к админскому паролю.**
+**(никому не показывайте, не используйте легко угадываемых имен/значений webtokens)**
+**Рекомендуется использовать комбинацию цифр, заглавных и прописных английских букв, а также символов**
+
+Перезагрузите разрешения webtoken::
 
   reloadwebpermissions
 
-**These credentials are sensitive! You should treat these as a password. (Keep it secret, no obvious names/tokens)**
-**its advised to use a combination of numbers, letters, lowercase and uppercase aswell as symbols**
+*по соображениям безопасности удаляйте неиспользуемые webtoken-ы. Список можно плочить по комманде "webtokens list" *
 
-*It is highly recommended to remove any tokens that are not being used.*
-
-Add your server 
+Добавляем сервер в систему 
 ----------------
 
-Go to the website, login and navigate to the add server page. Fill in the info, click submit and you will be taken to your servers dashboard.
+Зайдите на вебсайт CSMM, авторизуйтесь через STEAM и нажмите "add server". Заполните данные и нажмите "submit". Вам станет доступна панель управления сервером (Dashboard). В случае бесплатного пользования система позволяет добавить максимум 2 сервера
 
+Добавляем дополнительно администратора к вашему серверу 
+----------------
+
+**как добавить еще одного администратора вашему серверу в CSMM?**
+
+*Для начала необходимо, чтобы будующий админ зашел в систему CSMM через STEAM. Будет создан его профиль*
+
+*Затем зайдите в настройки сервера (settings) и в разделе базовыех настроек (Basic server settings) нажмите синюю кнопку добавить/убрать администратора (add/remove admins). Введите SteamID администратора (обычно это 17-тизначное число). Если ID введен правильно, в нижнем окне вы увидите имя профиля и 2 кнопки добавить и убрать (add и remove).*
+
+*После добавления администратора его имя и SteamIDон появится в окне справа, в списке current admins*

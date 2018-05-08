@@ -1,17 +1,17 @@
-Support
+Поддержка
 ========
 
-If you were trying to answer a question and these docs don't provide you with one, worry not!
+Если вы не нашли ответа на интересующий вопрос в этой документации, не беспокойтесь!
 
-The best way to contact someone is via our `Discord server <https://discordapp.com/invite/kuDJG6e>`_. In there, you can either ask your question in the appropriate support channel or you can create a personal ticket with Tickety discord bot.
+Самый простой способ связаться с разработчиками это  `Discord сервер <https://discordapp.com/invite/kuDJG6e>`_. Там вы можете задать свой вопрос в канале support или создать персональный запрос с помощью бота Tickety.
 
 
 Tickety
 --------
 
-Create a new ticket::
+Создать персональный запрос::
     -new
 
-This will create a private channel with you and support staff. 
+Эта команда создаст отдельный канал для вас и сотрудников техподдержки. 
 
-If you have a general question, it's better to ask in the public channel as you'll likely get answered faster there.
+Если вопрос касается базовых аспектов использования и настройки системы, лучше задать его в общем канале. Там Вы скорее всего получите ответ гораздо быстрее.

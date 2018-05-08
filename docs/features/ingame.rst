@@ -1,43 +1,44 @@
-In-game features
+Внутриигровые функции
 =================
 
 Country ban
 -----------
 
-Select countries that you do not wish on your server. CSMM will automatically kick anyone joining from an IP in these countries.
+Выберите страны, игроков из которых Вы не хотите видеть на своем сервере. CSMM будет автоматически отключать любого, чей IP принадлежит этим странам.
 
-**Note** This is very naive protection. Users can get around this with VPN/proxies. 
+**Примечание** Это достаточно простенькая защита. Игроки могут воспользоваться VPN или proxy сервисами. 
+**Белый список** Вы можете добавить некоторых игроков по их SteamId в список исключений. В таком случае Country ban будет пропускать на сервер игрока с этим ID, даже если он зайдет с IP, принадлежащем заблокированой стране
 
-Commands
+Комманды 
 --------
 
 calladmin
 ^^^^^^^^^^
-Create a support ticket. CSMM will collect some data such as your inventory and location to display along the ticket.
+Обратиться с к админам сервера за техподдержкой. CSMM автоматически собирает необходимые данные, такие как ваши координаты, а также содержимое инвентаря.
 
-Custom commands
+Настраиваемые команды
 ^^^^^^^^^^^^^^^^
 
-Admins can create custom ingame commands. You can set delay, timeout, cost of the command.
+Админы могут создать собственные игровые комманды. Можно задать длительность, задержку и стоимость пользования коммандами.
 
-**note: If a custom command has same name as an existing csmm command, the existing csmm command will always take precendence. the custom command never gets executed**
+**Примечание: Если имя такой комманды будет совпадать со встроенной в CSMM, то встроенная имеет высший приоритет. Настраиваея комманда  не будет исполняться**
 
-For example: 
+Примеры: 
 
 $discord::
 
-    say linkToDiscord
+    say "Please visit our Discord server! http://discordapp.gg/invite/......"
 
-You can execute multiple commands by separating with ";"::
+Вы можете выполнить несколько комманд, разделяя их ";"::
 
     say "Here is one message";say "Here is the second!"
 
-You have access to the players steam and entity ID with "${steamId}" and "${entityId}"::
+Вы можете отобразить имя пользователя в steam и его ID в 7days с помощью "${steamId}" и "${entityId}"::
 
     sayplayer ${entityId} "WAZAAAAAAAAAAAAA"
 
 
-Examples
+Примеры
 
 $safehouse::
 
@@ -55,28 +56,39 @@ $brutality::
 
     say "Die Bitch" ;spawnmultipleentity ${entityId} 15 @ 2 3 4 5 6 9 15 15 15 17 18 19 21 31 31 35 40 40 45 46 53 56 63 63 63 63 64 67 67 67 70
 
-Spawnmultipleentity is a coppis command for anyone without see example below::
+Spawnmultipleentity это комманда из мода Сoppi's. Если у вас он не установлен, смотрите следующий пример::
 
     Spawnentity ${entityId} 59 ;Spawnentity ${entityId} 59
     
-Message of the day
+Message of the day (автоинформатор)
 ------------------
 
-Set a message to be sent to players when they join the server and/or show this message periodically to all players.
+Установить сообщение, демонстрируемое игрокам при подключении к серверу и/или сообщения отображаемое по таймеру все игрокам находящимся онлайн
 
-This is useful to advertise your discord server, remind people to abide by the rules etc
+Это полезная функция для приглашения людей в Discord, напоминаная о необходимости соблюдения правил и т.д.
 
 
-
-Support tickets
+Запросы поддержки 
 -----------------
 
-Players can create support tickets with the corresponding command (if enabled). This is a great way for players to ask admins for some assistance, even when there is no admin currently online.
+Игроки могут создавать запросы на поддержку соответствующей коммандой (если она включена). Это прекрасная возможность для игроков попросить админов о помощи, даже если они не онлайн
 
-Economy
+Экономика
 ---------
 
-The economy module allows admins to set a cost to multiple actions (teleports, custom commands, ...). Players can earn money by being ingame or via discord (discord text earner)  the player logins to csmm goes to there profile page and logs with discord
+Модуль экономики позволяет админам установить стоимость пользования определенными функциями (телепорты, настраиваемые комманды и т.д.). Игроки могут зарабатывать монеты за нахождение онлайн, убийство зомби и других игроков, а также за отправление соообщений в дискорде (требует подключения Discord аккаунта к аккаунту CSMM на страничке профиля)
 
-currency name is also configurable: name the currency yourself
+Название монеток также настраивается. Назовите свою монету, как хотите
 
+Магазин
+^^^^
+
+*Коммерческим пользователям CSMM доступна функция магазина в разделе "экономика" панели выбора серверов* 
+
+*Админы могут добавить предметы в магазин, указать количество и цену*
+
+*Игроки могут зайти в магазин сервера по фиксированному адресу ( https://csmm.catalysm.net/shop/__номермагазина_) и приобресмти нужные предметы*
+
+*После приобретения, игрок может увидеть список предметов, готовых к выдаче, введя в чате игры "$claim list". Получени предметов производтся коммандой "$claim"*
+    
+.. image:: ../images/Features-Economy-Shop.png

@@ -1,9 +1,9 @@
-About
+О системе
 =======
 
-How does CSMM work?
+Как работает CSMM?
 --------------------
 
-At the very basic level, CSMM communicates with your server via the web API provided by Allocs fixes. CSMM uses telnet once during set up to create authentication details. Telnet info is never stored in the database!
+Самыми простыми словами, CSMM работает с вашим сервером через web API, встроеным в мод Allocs fixes. CSMM использует для подключения создаваемый вами webtoken.
 
-Once that has happened, CSMM uses a `custom library <https://github.com/niekcandaele/machinepack-7Days-webapi/>`_ to get/set/format/... data. 
+После подключения, CSMM гспользует `стороннюю библиотеку <https://github.com/niekcandaele/machinepack-7Days-webapi/>`_ для  получения/изменения/форматирования/... данных. 
